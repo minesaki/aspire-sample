@@ -4,6 +4,11 @@ public class WebAPIClient(HttpClient httpClient)
     {
         return await httpClient.GetFromJsonAsync<WeatherForecast[]>("weatherforecast") ?? [];
     }
+
+    public async Task<WeatherForecast[]> GetWeatherForecastFromDBAsync()
+    {
+        return await httpClient.GetFromJsonAsync<WeatherForecast[]>("weatherforecast/db") ?? [];
+    }
 }
 
 public class WeatherForecast

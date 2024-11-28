@@ -6,7 +6,7 @@
 分散アプリケーションに必要な、オーケストレーション、サービスディスカバリ、可観測性、回復性などを素早く容易に導入でき、またこれらの構成を C# コードで実装できる。  
 なお、分散アプリケーション以外の開発にも十分有用。
 
-.NET Aspire の導入方法については how_to_start_aspire_ja.md を参照。
+.NET Aspire の導入方法については [how_to_start_aspire_ja.md](https://github.com/minesaki/aspire-sample/blob/main/how_to_start_aspire_ja.md) を参照。
 
 ### オーケストレーション
 ローカルでの開発時に、複数のアプリケーションや依存関係をまとめて起動・管理できる。  

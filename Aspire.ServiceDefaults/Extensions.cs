@@ -76,6 +76,7 @@ public static class Extensions
 
         if (useOtlpExporter)
         {
+            // For .NET Aspire Dashboard. Comment out when using Jaeger
             builder.Services.AddOpenTelemetry().UseOtlpExporter();
         }
 
@@ -85,6 +86,9 @@ public static class Extensions
         //    builder.Services.AddOpenTelemetry()
         //       .UseAzureMonitor();
         //}
+
+        // When using Jaeger
+        // builder.Services.AddOpenTelemetry().WithTracing(builder => builder.AddOtlpExporter(options => options.Endpoint = new Uri("http://localhost:4317")));
 
         return builder;
     }
